@@ -1,6 +1,3 @@
-Absolutely — here’s a **GitHub-ready README** for your AutomationExercise project, styled in a **clean, professional format** similar to the example you shared.
-
----
 
 ````markdown
 # AutomationExercise - QA Automation Project
