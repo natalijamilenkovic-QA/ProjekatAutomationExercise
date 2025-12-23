@@ -1,5 +1,4 @@
 
-````markdown
 # AutomationExercise - QA Automation Project
 
 **Junior QA Automation practice project** for the  
