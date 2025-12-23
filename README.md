@@ -131,25 +131,31 @@ Each page is implemented with Selenium’s **PageFactory** and `@FindBy` annotat
 
 ---
 
-## 🔍 Key Techniques & Assertions
+## 🛠️ Methods & Assertions
 
-### Methods Used
+### Key Methods Used
 
-* **JavascriptExecutor**
+**JavascriptExecutor**  
+Used in the `ProductsPage` and `CartPage` to scroll to elements and click on elements that cannot be interacted with using a standard Selenium click due to overlapping animations.
 
-  * Handling elements that require scroll or complex interactions
-* **WebDriverWait**
+**WebDriverWait**  
+Used for explicit waiting until elements become visible (e.g. the **"View Cart"** link displayed in the modal).
 
-  * Explicit waits for element visibility or presence
-* **Actions**
+**Actions Class**  
+Used to simulate hover effects over products in order to reveal the **"Add to Cart"** button.
 
-  * Hover and complex mouse interactions for dynamic UI
+---
 
 ### Assertions Used
 
-* `Assert.assertTrue` – Element visibility & conditions
-* `Assert.assertFalse` – Validation that list results aren’t empty
-* `Assert.assertEquals` / `contains` – Verification of product names or expected text
+**Assert.assertTrue**  
+Used to verify element visibility (page headers, success messages, and the **"Logged in as"** text).
+
+**Assert.assertFalse**  
+Used to verify that the search results list is not empty.
+
+**Assert.assertEquals / contains**  
+Used to compare product names in the cart with the expected text.
 
 ---
 
